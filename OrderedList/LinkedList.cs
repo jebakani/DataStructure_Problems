@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderedList
+namespace UnOrderedList
 {
     
         public class Node<T>
@@ -21,23 +21,6 @@ namespace OrderedList
         {
             private Node<T> head;
 
-            //method to insert the element in front;
-            //public void AddFirst(T value)
-            //{
-            //    //creating the new node with given value
-            //    Node<T> newNode = new Node<T>(value);
-            //    //check whether the head is null or not . 
-            //    if (head == null)
-            //    {
-            //        head = newNode;
-            //    }
-            //    //make ne element as head
-            //    else
-            //    {
-            //        newNode.Next = head;
-            //        head = newNode;
-            //    }
-            //}
 
             public void AddLast(T value)
             {
@@ -60,67 +43,6 @@ namespace OrderedList
                 }
             }
 
-            //method to insert newNode next to existing node
-            //public void InsertNextTo(T value, T nextValue)
-            //{
-            //    //creating the new node with given value
-            //    Node<T> newNode = new Node<T>(value);
-            //    //check whether the head is null or not . 
-            //    if (head == null)
-            //    {
-            //        head = newNode;
-            //    }
-            //    //iterate till the last element or till the node is found
-            //    else
-            //    {
-            //        //initialize two local variable to hold the node address
-            //        Node<T> prev = head;
-            //        Node<T> temp = prev.Next;
-            //        while (prev.Next != null && !(prev.value.Equals(nextValue)))
-            //        {
-            //            prev = temp;
-            //            temp = temp.Next;
-            //        }
-            //        if (prev.value.Equals(nextValue))
-            //        {
-            //            newNode.Next = prev.Next;
-            //            prev.Next = newNode;
-            //        }
-            //        else
-            //        {
-            //            Console.WriteLine("Element {0} is not found.", nextValue);
-            //        }
-            //    }
-            //}
-            //public void DeleteFirst()
-            //{
-            //    if (head == null)
-            //    {
-            //        Console.WriteLine("No element in the list");
-            //    }
-            //    //make the next node as head
-            //    else
-            //    {
-            //        head = head.Next;
-            //    }
-            //}
-            //public void DeleteLast()
-            //{
-            //    if (head == null)
-            //    {
-            //        Console.WriteLine("No element in the list");
-            //    }
-            //    //make the check whether the next node of current node is null.If yes change next field of current node as null.
-            //    else
-            //    {
-            //        Node<T> temp = head;
-            //        while (temp.Next.Next != null)
-            //        {
-            //            temp = temp.Next;
-            //        }
-            //        temp.Next = null;
-            //    }
-            //}
 
             public void DeleteNode(T value)
             {
